@@ -6,15 +6,15 @@ using UnityEngine.Audio;
 public class Settings : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public AudioMixer audioMixer1;
+    //public AudioMixer audioMixer1;
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
-        audioMixer1.SetFloat("volume", volume + 20f);
+        //audioMixer1.SetFloat("volume", volume + 20f);
     }
-    /*public void SetPitch(float pitch)
+    public void SetPitch(float pitch)
     {
         audioMixer.SetFloat("pitch", pitch);
-        audioMixer1.SetFloat("pitch", pitch);
-    }*/
+        //audioMixer1.SetFloat("pitch", pitch);
+    }
 }

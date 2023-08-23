@@ -15,7 +15,7 @@ public class NPC : MonoBehaviour
         //transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length - 1)];
         //Random Scale
         float scale = Random.Range(0.5f, 1.5f);
-        transform.GetChild(0).localScale = new Vector3(scale, scale, scale);
+        transform.localScale = new Vector3(transform.localScale.x * scale, transform.localScale.y * scale, transform.localScale.z * scale);
     }
 
     void Update ()

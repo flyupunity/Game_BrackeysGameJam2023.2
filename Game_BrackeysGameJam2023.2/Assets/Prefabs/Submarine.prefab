@@ -396,11 +396,11 @@ GameObject:
   - component: {fileID: 7648314179443095939}
   - component: {fileID: 8190979314695914512}
   - component: {fileID: 2431169591755474991}
-  - component: {fileID: 5859035201557114347}
   - component: {fileID: 7776051207573449230}
+  - component: {fileID: 389870974051162302}
   m_Layer: 0
   m_Name: Submarine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +429,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8429337392457615010}
-  m_Mesh: {fileID: 3163171260390484736, guid: 2b2d5337f69a82d46afe276e0e8236b5, type: 3}
+  m_Mesh: {fileID: 8616276468678558677, guid: 2b2d5337f69a82d46afe276e0e8236b5, type: 3}
 --- !u!23 &8069317771666990967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 34
+  m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!114 &8190979314695914512
 MonoBehaviour:
@@ -500,10 +500,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7992d500e49714391f7e9954ff9937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 10
+  isMove: 1
+  walkSpeed: 3
   horizontalMove: 0
   verticalMove: 0
   Move: {x: 0, y: 0, z: 0}
+  maxHP: 5
+  HP: 5
   GameOverPanel: {fileID: 0}
 --- !u!64 &2431169591755474991
 MeshCollider:
@@ -519,37 +522,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3163171260390484736, guid: 2b2d5337f69a82d46afe276e0e8236b5, type: 3}
---- !u!114 &5859035201557114347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429337392457615010}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 81cf68bf66f5d33489bd7a246fedd15e,
-    type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!136 &7776051207573449230
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -564,3 +536,24 @@ CapsuleCollider:
   m_Height: 0.04
   m_Direction: 2
   m_Center: {x: 0.0000000011920929, y: -0.0002622485, z: -0.0040923143}
+--- !u!95 &389870974051162302
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429337392457615010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2bca685f7cb0f6745af7ed0a26661b2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

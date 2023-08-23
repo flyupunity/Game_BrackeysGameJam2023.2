@@ -24,7 +24,7 @@ public class Creator : MonoBehaviour
             newTurtle.transform.GetChild(0).name = i + "";
             newTurtle.transform.GetChild(1).name = i + "";
             newTurtle.transform.GetChild(0).transform.localScale = new Vector3(turtleScale, turtleScale, turtleScale);
-            newTurtle.transform.GetChild(1).transform.localScale = new Vector3(turtleScale, turtleScale, turtleScale);
+            //newTurtle.transform.GetChild(1).transform.localScale = new Vector3(turtleScale, turtleScale, turtleScale);
             //turtles[i] = newTurtle.transform.GetChild(0).GetChild(0).gameObject.GetComponent<Collider2D>();
         }
         int num1 = Random.Range(20, 30);
@@ -41,7 +41,7 @@ public class Creator : MonoBehaviour
             newFish.transform.GetChild(0).name = i + "";
             newFish.transform.GetChild(1).name = i + "";
             newFish.transform.GetChild(0).transform.localScale = new Vector3(fishScale, fishScale, fishScale);
-            newFish.transform.GetChild(1).transform.localScale = new Vector3(fishScale, fishScale, fishScale);
+            //newFish.transform.GetChild(1).transform.localScale = new Vector3(fishScale, fishScale, fishScale);
             //fishes[i] = newFish.transform.GetChild(0).gameObject.GetComponent<Collider2D>();
             /*for (int y = 0; y < num0; y++)
             {
