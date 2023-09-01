@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TreasureСhest : MonoBehaviour
 {
+    [SerializeField] private LifeTime lifeTime;
+
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerMovement>())
+        if (other.gameObject.GetComponent<PlayerMovement>() )
         {
             GetComponent<Animator>().enabled = true;
         }
@@ -18,8 +20,10 @@ public class TreasureСhest : MonoBehaviour
             GetComponent<Animator>().enabled = true;
         }
     }
-    public void BonusEvent()
+    public void StartLifeTime()
     {
-
+        StartCoroutine(lifeTime.lifeTimeCoroutine());
+        GetComponent<Animator>().enabled = false;
+        Destroy(this);
     }
 }

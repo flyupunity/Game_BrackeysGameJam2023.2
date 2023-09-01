@@ -395,9 +395,8 @@ GameObject:
   - component: {fileID: 8069317771666990967}
   - component: {fileID: 7648314179443095939}
   - component: {fileID: 8190979314695914512}
-  - component: {fileID: 2431169591755474991}
-  - component: {fileID: 7776051207573449230}
   - component: {fileID: 389870974051162302}
+  - component: {fileID: 3541784293120421761}
   m_Layer: 0
   m_Name: Submarine
   m_TagString: Player
@@ -507,35 +506,8 @@ MonoBehaviour:
   Move: {x: 0, y: 0, z: 0}
   maxHP: 5
   HP: 5
+  monsterAnimator: {fileID: 0}
   GameOverPanel: {fileID: 0}
---- !u!64 &2431169591755474991
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429337392457615010}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3163171260390484736, guid: 2b2d5337f69a82d46afe276e0e8236b5, type: 3}
---- !u!136 &7776051207573449230
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429337392457615010}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.01
-  m_Height: 0.04
-  m_Direction: 2
-  m_Center: {x: 0.0000000011920929, y: -0.0002622485, z: -0.0040923143}
 --- !u!95 &389870974051162302
 Animator:
   serializedVersion: 5
@@ -557,3 +529,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &3541784293120421761
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429337392457615010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.010967788
+  m_Height: 0.039079998
+  m_Direction: 2
+  m_Center: {x: 0.0000000011920929, y: -0.0005088806, z: -0.004092315}

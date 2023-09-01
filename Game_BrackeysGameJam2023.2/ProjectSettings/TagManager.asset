@@ -7,6 +7,9 @@ TagManager:
   - Fish
   - Manager
   - Rock
+  - VirtualCamera
+  - Ask_?
+  - Mem
   layers:
   - Default
   - TransparentFX

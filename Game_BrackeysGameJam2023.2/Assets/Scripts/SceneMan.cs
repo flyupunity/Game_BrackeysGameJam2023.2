@@ -29,9 +29,12 @@ public class SceneMan : MonoBehaviour
     {
         Time.timeScale = 0f;
     }
-
     public void Reproduse()
     {
         Time.timeScale = 1f;
+    }
+    public void OpenURLWhenClick(string url)
+    {
+        Application.OpenURL(url);
     }
 }
