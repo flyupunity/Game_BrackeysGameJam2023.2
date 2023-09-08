@@ -94,12 +94,12 @@ public class PlayerMovement : MonoBehaviour
             RandomBonus();
 
         }
-        if (other.gameObject.tag == "Mem")
+        /*if (other.gameObject.tag == "Mem")
         {
             PlayerPrefs.SetInt("Mem", 1);
             GameObject.FindGameObjectWithTag("Manager").GetComponent<UGS_Analytics>().MemCustomEvent();
 
-        }
+        }*/
         if (other.gameObject.name == "Trigger_3_Kat-Scene")
         {
             FinalKatScene();

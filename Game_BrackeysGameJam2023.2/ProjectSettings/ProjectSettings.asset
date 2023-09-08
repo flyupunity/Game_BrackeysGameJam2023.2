@@ -823,7 +823,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 4
+  selectedPlatform: 3
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 0
@@ -909,11 +909,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9d15d372-dfd8-4bae-be05-20a50db66977
+  cloudProjectId: 22a636b3-e2dc-43e6-a3ee-da227218bb8e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Game_BrackeysGameJam2023.2
-  organizationId: flyupspam
+  projectName: GameBrackeysGameJam2023.2
+  organizationId: flyupunity
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

@@ -8,17 +8,29 @@ public class TreasureСhest : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerMovement>() )
+        if (other.gameObject.GetComponent<PlayerMovement>())
         {
             GetComponent<Animator>().enabled = true;
+            if (gameObject.tag == "Mem")
+            {
+                PlayerPrefs.SetInt("Mem", 1);
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<UGS_Analytics>().MemCustomEvent();
+            }
         }
+        print(PlayerPrefs.GetInt("Mem"));
     }
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.GetComponent<PlayerMovement>())
         {
             GetComponent<Animator>().enabled = true;
+            if (gameObject.tag == "Mem")
+            {
+                PlayerPrefs.SetInt("Mem", 1);
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<UGS_Analytics>().MemCustomEvent();
+            }
         }
+        print(PlayerPrefs.GetInt("Mem"));
     }
     public void StartLifeTime()
     {
